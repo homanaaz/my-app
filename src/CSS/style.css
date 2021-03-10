@@ -1,22 +1,22 @@
 @font-face {
 font-family: "Raleway";
-src: url("./Fonts/Raleway/Raleway-Regular.otf")
+src: url("./Fonts/Raleway/Raleway-Regular.ttf")
 }
 @font-face {
 font-family: "Raleway-Bold";
-src: url("./Fonts/Raleway/Raleway-Bold.otf")
+src: url("./Fonts/Raleway/Raleway-Bold.ttf")
 }
 @font-face {
 font-family: "Raleway-ExtraBold";
-src: url("./Fonts/Raleway/Raleway-ExtraBold.otf")
+src: url("./Fonts/Raleway/Raleway-ExtraBold.ttf")
 }
 @font-face {
 font-family: "Raleway-SemiBold";
-src: url("./Fonts/Raleway/Raleway-SemiBold.otf")
+src: url("./Fonts/Raleway/Raleway-SemiBold.ttf")
 }
 @font-face {
 font-family: "Raleway-Medium";
-src: url("./Fonts/Raleway/Raleway-Medium.otf")
+src: url("./Fonts/Raleway/Raleway-Medium.ttf")
 }
 @font-face {
 font-family: 'Recoleta-Bold';
