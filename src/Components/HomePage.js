@@ -27,7 +27,7 @@ const HomePage = () => (
             <div>
               <button style={{ height: "54px" }} className="primary-button-blue">Begin nu met vastleggen</button>
             </div>
-            <div style={{ margin: "28px 0" }}>
+            <div style={{ margin: "28px 0" }} className="momentio-get-start-text">
               Of ontdek eerst
 		  <a className="momentio-blog-link" style={{color: "blue"}}>hoe het werkt</a>
 	
@@ -121,7 +121,7 @@ const HomePage = () => (
               <div style={{ paddingLeft: "24px" }}>
                 <div
                   style={{
-                    font: "normal normal 800 24px/35px Raleway",
+                    font: "normal normal 800 24px/35px Raleway-ExtraBold",
                     "letter-spacing": "0px",
                     color: "#233155"
                   }}
@@ -131,7 +131,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 500 18px/30px Raleway",
+                    font: "normal normal 500 18px/30px Raleway-Medium",
                     "letter-spacing": 0,
                     color: "#233155",
                     marginTop: "25px",
@@ -144,7 +144,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -154,7 +154,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -163,7 +163,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -172,7 +172,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -181,7 +181,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -190,7 +190,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#3B3DBB",
                     marginTop: "40px"
@@ -220,7 +220,7 @@ const HomePage = () => (
               <div style={{ paddingLeft: "24px" }}>
                 <div
                   style={{
-                    font: "normal normal 800 24px/35px Raleway",
+                    font: "normal normal 800 24px/35px Raleway-ExtraBold",
                     "letter-spacing": "0px",
                     color: "#233155"
                   }}
@@ -230,7 +230,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 500 18px/30px Raleway",
+                    font: "normal normal 500 18px/30px Raleway-Medium",
                     "letter-spacing": 0,
                     color: "#233155",
                     marginTop: "25px",
@@ -243,7 +243,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -253,7 +253,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -262,7 +262,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -271,7 +271,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -280,7 +280,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -289,7 +289,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#3B3DBB",
                     marginTop: "40px"
@@ -319,7 +319,7 @@ const HomePage = () => (
               <div style={{ paddingLeft: "24px" }}>
                 <div
                   style={{
-                    font: "normal normal 800 24px/35px Raleway",
+                    font: "normal normal 800 24px/35px Raleway-ExtraBold",
                     "letter-spacing": "0px",
                     color: "#233155"
                   }}
@@ -329,7 +329,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 500 18px/30px Raleway",
+                    font: "normal normal 500 18px/30px Raleway-Medium",
                     "letter-spacing": 0,
                     color: "#233155",
                     marginTop: "25px",
@@ -342,7 +342,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -352,7 +352,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -361,7 +361,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -370,7 +370,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -379,7 +379,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#233155"
                   }}
@@ -388,7 +388,7 @@ const HomePage = () => (
                 </div>
                 <div
                   style={{
-                    font: "normal normal 800 18px/30px Raleway",
+                    font: "normal normal 800 18px/30px Raleway-ExtraBold",
                     "letter-spacing": 0,
                     color: "#3B3DBB",
                     marginTop: "40px"
@@ -402,13 +402,18 @@ const HomePage = () => (
         </div>
 		 <div class="momentio-home-demo-container" style={{ "margin-top": "50px" }}><div className="momentio-home-demo-video">
 		 
-		 
+	
+  <div class="playpause">
+    <input type="checkbox" value="None" id="playpause" name="check" />
+    <label for="playpause"></label>
+  </div>
 		
-   <video width="320" height="240" controls>
+   <video width="320" height="240" poster={image1}>
   <source src={demo} type="video/mp4"/>
   
 Your browser does not support the video tag.
 </video>
+
 		 </div>
 		 <div className="momentio-home-demo-link ">
 		 <div>
@@ -462,7 +467,12 @@ Your browser does not support the video tag.
 		<div className="momentio-home-begin-title">AANMELDEN</div>
 		<div className="momentio-home-begin-desc">Begin vandaag nog met uw persoonlijk archief!</div>
 		<div ><button className="primary-button-yellow momentio-home-begin-btn">Meld je nu aan </button></div>
-		<div className="momentio-home-begin-link">Bekijk eerst onze pakketen</div>
+		
+		<div  className="momentio-home-begin-link momentio-get-start-text">
+              Bekijk eerst onze 
+		  <a className="momentio-blog-link" style={{color: "#fff"}}>pakketen</a>
+	
+            </div>
 		
 		</div>
 		

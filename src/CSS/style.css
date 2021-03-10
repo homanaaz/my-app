@@ -1,6 +1,32 @@
+@font-face {
+font-family: "Raleway";
+src: url("./Fonts/Raleway/Raleway-Regular.otf")
+}
+@font-face {
+font-family: "Raleway-Bold";
+src: url("./Fonts/Raleway/Raleway-Bold.otf")
+}
+@font-face {
+font-family: "Raleway-ExtraBold";
+src: url("./Fonts/Raleway/Raleway-ExtraBold.otf")
+}
+@font-face {
+font-family: "Raleway-SemiBold";
+src: url("./Fonts/Raleway/Raleway-SemiBold.otf")
+}
+@font-face {
+font-family: "Raleway-Medium";
+src: url("./Fonts/Raleway/Raleway-Medium.otf")
+}
+@font-face {
+font-family: 'Recoleta-Bold';
+src: url("./Fonts/Recoleta/Recoleta-Bold.ttf")
+	
+}
 :root {
   /* Colors: */
   --white: #ffffff;
+  
   --backgroundlight: #f1f6f9;
   --backgroundmedium: #c3daea;
   --nightblue: #233155;
@@ -31,6 +57,42 @@
   --unnamed-line-spacing-50: 50px;
   --unnamed-line-spacing-64: 64px;
   --unnamed-line-spacing-74: 74px;
+}
+.playpause {
+	height: 50px;
+    display: flex;
+    width: 50px;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 30%;
+    z-index: 111;
+    border-radius: 50%;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.playpause label {
+  outline: none !important;
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+ height: 12px;
+  border-color: transparent transparent transparent orange;
+  transition: 100ms all ease;
+  cursor: pointer;
+   border-style: solid;
+  border-width: 9px 0 9px 13px;
+ margin-left: 5px;
+}
+.playpause input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+}
+.playpause input[type=checkbox]:checked + label {
+margin-left: 0;
+   border-style: double;
+   border-width: 0px 0 0px 13px;
 }
 
 /* Character Styles */
@@ -135,7 +197,7 @@ html {
 }
 .header-title-section {
   display: flex;
-  font: normal normal bold 32px/44px Recoleta;
+  font: normal normal bold 32px/44px Recoleta-Bold;
   letter-spacing: 0px;
   color: #233155;
   width: 30%;
@@ -154,7 +216,7 @@ html {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--nightblue);
   text-align: left;
-  font: normal normal bold 18px/21px Raleway;
+  font: normal normal bold 18px/21px Raleway-Bold;
   letter-spacing: 0px;
   color: #233155;
 }
@@ -164,11 +226,11 @@ html {
   display: flex;
   flex-grow: 0.1;
   text-align: left;
-  font: var(--unnamed-font-style-normal) normal bold 32px/44px Recoleta;
+  font: var(--unnamed-font-style-normal) normal bold 32px/44px Recoleta-Bold;
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--nightblue);
   text-align: left;
-  font: normal normal bold 32px/44px Recoleta;
+  font: normal normal bold 32px/44px Recoleta-Bold;
   letter-spacing: 0px;
   color: #233155;
 }
@@ -180,7 +242,7 @@ html {
 
 .content-one {
   text-align: left;
-  font: normal normal 800 64px/74px Raleway;
+  font: normal normal 800 64px/74px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #233155;
   margin-bottom: 20px;
@@ -227,13 +289,13 @@ html {
 }
 .text1 {
   text-align: center;
-  font: normal normal 600 18px/64px Raleway;
+  font: normal normal 600 18px/64px Raleway-SemiBold;
   letter-spacing: 1.8px;
   color: #23315580;
 }
 .text2 {
   text-align: center;
-  font: normal normal 800 64px/74px Raleway;
+  font: normal normal 800 64px/74px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #233155;
   padding: 0 50px;
@@ -241,7 +303,7 @@ html {
 .text3 {
   margin-top: 28px;
   text-align: center;
-  font: normal normal 500 24px/35px Raleway;
+  font: normal normal 500 24px/35px Raleway-Medium;
   letter-spacing: 0px;
   color: #233155;
   padding: 0 19%;
@@ -589,7 +651,7 @@ body {
   border-radius: 27px;
   opacity: 1;
   text-align: left;
-  font: normal normal bold 18px/24px Raleway;
+  font: normal normal bold 18px/24px Raleway-Bold;
   letter-spacing: 0px;
   color: #ffffff;
   height: 54px;
@@ -820,7 +882,7 @@ body {
   border: 2px solid #253252;
   border-radius: 27px;
   text-align: left;
-  font: normal normal bold 16px/24px Raleway;
+  font: normal normal bold 16px/24px Raleway-Bold;
   letter-spacing: 0px;
   color: #233155;
   height: 44px;
@@ -952,13 +1014,15 @@ body {
   margin-left: 3%;
   padding-top: 50px;
   z-index: 1;
+     
 }
 .momentio-home-demo-video > video {
   width: 100%;
   height: 348px;
-  background: transparent url(../Images/Schermafbeelding18.15.04.png) 0% 0%
-    no-repeat padding-box;
-  box-shadow: 0px 8px 16px #3b3dbb40;
+    background: #f5f5f5;
+    font-family: "Raleway-Medium";
+    box-shadow: 0px 8px 16px #3b3dbb40;
+
   border-radius: 24px;
 }
 .momentio-home-demo-link {
@@ -980,7 +1044,7 @@ body {
     var(--unnamed-font-family-raleway);
   letter-spacing: var(--unnamed-character-spacing-1-8);
   text-align: center;
-  font: normal normal 600 18px/20px Raleway;
+  font: normal normal 600 18px/20px Raleway-SemiBold;
   letter-spacing: 1.8px;
   color: #23315580;
 }
@@ -992,7 +1056,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--nightblue);
   text-align: center;
-  font: normal normal 800 40px/64px Raleway;
+  font: normal normal 800 40px/64px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #233155;
 }
@@ -1008,7 +1072,7 @@ body {
     var(--unnamed-font-family-raleway);
   letter-spacing: var(--unnamed-character-spacing-1-8);
   text-align: left;
-  font: normal normal 600 18px/64px Raleway;
+  font: normal normal 600 18px/64px Raleway-SemiBold;
   letter-spacing: 1.8px;
   color: #ffffff80;
 }
@@ -1019,7 +1083,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white);
   text-align: left;
-  font: normal normal 800 40px/50px Raleway;
+  font: normal normal 800 40px/50px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -1033,7 +1097,7 @@ body {
   color: var(--white);
   color: white;
   text-align: left;
-  font: normal normal 600 18px/24px Raleway;
+  font: normal normal 600 18px/24px Raleway-SemiBold;
   letter-spacing: 0px;
 }
 
@@ -1045,6 +1109,10 @@ body {
   border: 2px solid #ffffff;
   border-radius: 27px;
   background: transparent;
+font: normal normal bold 18px/24px Raleway-Bold;
+outline: none !important;
+letter-spacing: 0px;
+color: #FFFFFF;
 }
 
 .momentio-home-tips-container {
@@ -1064,13 +1132,20 @@ body {
 .momentio-tips-content-container {
   padding: 25px 20px 30px 20px;
 }
+.momentio-get-start-text{
+	  color: var(--nightblue);
+text-align: left;
+font: normal normal 500 18px/21px Raleway;
+letter-spacing: 0px;
+color: #233155;
+  }
 .momentio-tips-content-header {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
     var(--unnamed-font-size-14) / var(--unnamed-line-spacing-24)
     var(--unnamed-font-family-raleway);
   letter-spacing: var(--unnamed-character-spacing-1-4);
   text-align: left;
-  font: normal normal 600 14px/24px Raleway;
+  font: normal normal 600 14px/24px Raleway-SemiBold;
   letter-spacing: 1.4px;
   color: #23315580;
 }
@@ -1080,7 +1155,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--nightblue);
   text-align: left;
-  font: normal normal 800 24px/36px Raleway;
+  font: normal normal 800 24px/36px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #233155;
 }
@@ -1092,7 +1167,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--nightblue);
   text-align: left;
-  font: normal normal 500 18px/30px Raleway;
+  font: normal normal 500 18px/30px Raleway-Medium;
   letter-spacing: 0px;
 
   color: #233155;
@@ -1103,10 +1178,10 @@ body {
     16px / var(--unnamed-line-spacing-30) var(--unnamed-font-family-raleway);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--sunsetblue);
-  margin: 30px;
+  margin: 7px;
   text-align: center;
   text-decoration: underline;
-  font: normal normal 800 16px/30px Raleway;
+  font: normal normal 800 16px/30px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #3b3dbb;
 }
@@ -1127,6 +1202,9 @@ body {
   background: var(--sunyellow) 0% 0% no-repeat padding-box;
   background: #fcc55e 0% 0% no-repeat padding-box;
   box-shadow: 0px 8px 16px #23315540;
+  font: normal normal bold 18px/24px Raleway-Bold;
+letter-spacing: 0px;
+color: #1B3548;
 }
 .momentio-home-begin-link {
   letter-spacing: var(--unnamed-character-spacing-0);
@@ -1143,7 +1221,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-1-8);
   color: var(--white);
   text-align: center;
-  font: normal normal 600 18px/64px Raleway;
+  font: normal normal 600 18px/64px Raleway-SemiBold;
   letter-spacing: 1.8px;
   color: #ffffff;
 }
@@ -1155,7 +1233,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white);
   text-align: center;
-  font: normal normal 800 64px/74px Raleway;
+  font: normal normal 800 64px/74px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -1188,7 +1266,7 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
   text-decoration: underline;
-  font: normal normal 600 18px/32px Raleway;
+  font: normal normal 600 18px/32px Raleway-SemiBold;
   letter-spacing: 0px;
   color: #23315580;
 }
@@ -1198,18 +1276,21 @@ body {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--nightblue);
   text-align: left;
-  font: normal normal 800 24px/29px Raleway;
+  font: normal normal 800 24px/29px Raleway-ExtraBold;
   letter-spacing: 0px;
   color: #233155;
 }
 .momentio-footer-company-copyright > span {
   text-decoration: underline;
+font: normal normal 600 18px/24px Raleway-SemiBold;
+letter-spacing: 0px;
+color: #FFFFFF;
 }
 .momentio-footer-company-copyright {
   font: var(--unnamed-font-style-normal) normal
     var(--unnamed-font-weight-medium) var(--unnamed-font-size-18) /
     var(--unnamed-line-spacing-24) var(--unnamed-font-family-raleway);
-  font: normal normal 500 18px/24px Raleway;
+  font: normal normal 500 18px/24px Raleway-Medium;
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white);
   text-align: left;
@@ -1218,11 +1299,11 @@ body {
 }
 .momentio-footer-company-name {
   width: 155px;
-  font: var(--unnamed-font-style-normal) normal 900 32px/44px Recoleta;
+  font: var(--unnamed-font-style-normal) normal 900 32px/44px Recoleta-Bold;
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--white);
   text-align: left;
-  font: normal normal 900 32px/44px Recoleta;
+  font: normal normal 900 32px/44px Recoleta-Bold;
   letter-spacing: 0px;
   color: #ffffff;
 }
@@ -1245,14 +1326,19 @@ body {
   width: 60%;
 }
 
-@media only screen and (max-width: 1120px) and (min-width: 900px) {
+@media only screen and (max-width: 1000px){
+	.header-menu-item {
+   
+    font: normal normal bold 16px/18px Raleway-Bold !important;
+	}
 }
+
 @media only screen and (max-width: 1120px) {
   .moment-video-description {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
       28px / var(--unnamed-line-spacing-35) var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal 800 28px/35px Raleway;
+    font: normal normal 800 28px/35px Raleway-ExtraBold;
   }
   .momentio-home-demo-link {
     width: 60%;
@@ -1298,7 +1384,7 @@ body {
       16px/19px var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
 
-    font: normal normal 800 16px/19px Raleway !important;
+    font: normal normal 800 16px/19px Raleway-ExtraBold !important;
   }
   .text3 {
     font: var(--unnamed-font-style-normal) normal
@@ -1306,14 +1392,14 @@ body {
       var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
     color: var(--nightblue) !important;
-    font: normal normal 500 20px/30px Raleway !important;
+    font: normal normal 500 20px/30px Raleway-Medium !important;
   }
   .text1 {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       var(--unnamed-font-size-14) / var(--unnamed-line-spacing-64)
       var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-1-4) !important;
-    font: normal normal 600 14px/64px Raleway !important;
+    font: normal normal 600 14px/64px Raleway-SemiBold !important;
     letter-spacing: 1.4px !important;
   }
   .text2 {
@@ -1321,7 +1407,7 @@ body {
       36px/40px var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
 
-    font: normal normal 800 36px/40px Raleway !important;
+    font: normal normal 800 36px/40px Raleway-ExtraBold !important;
   }
   .momentio-footer-company-copyright > span {
     display: block !important;
@@ -1334,10 +1420,10 @@ body {
   }
   .momentio-footer-company-name {
     font: var(--unnamed-font-style-normal) normal bold
-      var(--unnamed-font-size-24) / 33px Recoleta !important;
+      var(--unnamed-font-size-24) / 33px Recoleta-Bold !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
 
-    font: normal normal bold 24px/33px Recoleta !important;
+    font: normal normal bold 24px/33px Recoleta-Bold !important;
   }
   .momentio-footer-company {
     min-height: 110px !important;
@@ -1368,21 +1454,21 @@ body {
       var(--unnamed-line-spacing-24) var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
     text-align: center !important;
-    font: normal normal bold 16px/24px Raleway !important;
+    font: normal normal bold 16px/24px Raleway-Bold !important;
   }
 
   .momentio-home-begin-desc {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
       36px/40px var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
-    font: normal normal 800 36px/40px Raleway !important;
+    font: normal normal 800 36px/40px Raleway-ExtraBold !important;
   }
   .momentio-home-begin-title {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       var(--unnamed-font-size-14) / var(--unnamed-line-spacing-64)
       var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-1-4) !important;
-    font: normal normal 600 14px/64px Raleway !important;
+    font: normal normal 600 14px/64px Raleway-SemiBold !important;
   }
 
   .momentio-tips-content-desc {
@@ -1390,51 +1476,51 @@ body {
       var(--unnamed-font-weight-medium) 16px / var(--unnamed-line-spacing-24)
       var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-0) !important;
-    font: normal normal 500 16px/24px Raleway !important;
+    font: normal normal 500 16px/24px Raleway-Medium !important;
   }
   .momentio-tips-content-title {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
       20px/28px var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-0) !important;
-    font: normal normal 800 20px/28px Raleway !important;
+    font: normal normal 800 20px/28px Raleway-ExtraBold !important;
   }
   .momentio-tips-content-header {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       12px / var(--unnamed-line-spacing-24) var(--unnamed-font-family-raleway);
-    font: normal normal 600 12px/24px Raleway !important;
+    font: normal normal 600 12px/24px Raleway-SemiBold !important;
   }
   .momentio-blog-header {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       var(--unnamed-font-size-14) / var(--unnamed-line-spacing-64)
       var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-1-4) !important;
-    font: normal normal 600 14px/64px Raleway !important;
+    font: normal normal 600 14px/64px Raleway-SemiBold !important;
   }
   .momentio-blog-title {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
       28px / var(--unnamed-line-spacing-35) var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-0) !important;
 
-    font: normal normal 800 28px/35px Raleway !important;
+    font: normal normal 800 28px/35px Raleway-ExtraBold !important;
   }
   .moment-video-header {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       var(--unnamed-font-size-14) / var(--unnamed-line-spacing-64)
       var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-1-4) !important;
-    font: normal normal 600 14px/64px Raleway !important;
+    font: normal normal 600 14px/64px Raleway-SemiBold !important;
   }
   .moment-video-description {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
       28px / var(--unnamed-line-spacing-35) var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-0) !important;
-    font: normal normal 800 28px/35px Raleway !important;
+    font: normal normal 800 28px/35px Raleway-ExtraBold !important;
   }
   .moment-video-user {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
       16px / var(--unnamed-line-spacing-24) var(--unnamed-font-family-raleway);
     letter-spacing: var(--unnamed-character-spacing-0) !important;
-    font: normal normal 600 16px/24px Raleway !important;
+    font: normal normal 600 16px/24px Raleway-SemiBold !important;
   }
   .momentio-home-tips-container:nth-child(1),
   .momentio-home-tips-container:nth-child(2) {
@@ -1461,6 +1547,10 @@ body {
   .momentio-home-demo-video > video {
     height: 221px !important;
   }
+  .playpause {
+    margin-left: 46%  !important;
+    margin-top: 11%  !important;
+  }
   .momentio-home-demo-video {
     margin-left: 0 !important;
     width: 100% !important;
@@ -1475,8 +1565,12 @@ body {
     font: var(--unnamed-font-style-normal) normal bold 16px /
       var(--unnamed-line-spacing-24) var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
-    font: normal normal bold 16px/24px Raleway !important;
+    font: normal normal bold 16px/24px Raleway-Bold !important;
     letter-spacing: 0px !important;
+  }
+  
+  .momentio-get-start-text{
+font: normal normal 500 16px/19px Raleway !important;
   }
 
   .content-one {
@@ -1484,7 +1578,7 @@ body {
       36px/40px var(--unnamed-font-family-raleway) !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
     color: var(--nightblue) !important;
-    font: normal normal 800 36px/40px Raleway !important;
+    font: normal normal 800 36px/40px Raleway-ExtraBold !important;
   }
 
   .header-title-section {
@@ -1498,7 +1592,7 @@ body {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--nightblue);
     text-align: left;
-    font: normal normal bold 18px/21px Raleway;
+    font: normal normal bold 18px/21px Raleway-Bold;
     letter-spacing: 0px;
     color: #233155;
   }
@@ -1506,11 +1600,11 @@ body {
   .header-title-item {
     padding-left: 10px !important;
     font: var(--unnamed-font-style-normal) normal bold
-      var(--unnamed-font-size-24) / 33px Recoleta !important;
+      var(--unnamed-font-size-24) / 33px Recoleta-Bold !important;
     letter-spacing: var(--unnamed-character-spacing-0) !important;
     color: var(--nightblue) !important;
     text-align: left !important;
-    font: normal normal bold 24px/33px Recoleta !important;
+    font: normal normal bold 24px/33px Recoleta-Bold !important;
   }
 
   .menu-item-sm {
